@@ -179,6 +179,8 @@
     <IntDir>obj\x32\Debug\wxsqlite3\</IntDir>
     <TargetName>wxsqlite3$(wxFlavour)d</TargetName>
     <TargetExt>.lib</TargetExt>
+    <IncludePath>$(WXWIDGETS_HOME)\INCLUDE;$(IncludePath)</IncludePath>
+    <LibraryPath>$(WXWIDGETS_HOME)\LIB\X86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutDir>$(wxOutDir)\</OutDir>
@@ -191,6 +193,8 @@
     <IntDir>obj\x32\Release\wxsqlite3\</IntDir>
     <TargetName>wxsqlite3$(wxFlavour)</TargetName>
     <TargetExt>.lib</TargetExt>
+    <IncludePath>$(WXWIDGETS_HOME)\INCLUDE;$(IncludePath)</IncludePath>
+    <LibraryPath>$(WXWIDGETS_HOME)\LIB\X86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>$(wxOutDir)\</OutDir>

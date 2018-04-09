@@ -9,6 +9,9 @@
 // Licence:     wxWindows licence
 ///////////////////////////////////////////////////////////////////////////////
 
+//¿âÎÄ¼þÍ·
+#include "pch.h"
+
 // For compilers that support precompilation, includes "wx/wx.h".
 #include "wx/wxprec.h"
 
@@ -333,7 +336,6 @@ static const wxCmdLineEntryDesc cmdLineDesc[] =
 #endif
   { wxCMD_LINE_NONE }
 };
-
 
 bool Minimal::OnInit()
 {

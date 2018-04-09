@@ -180,6 +180,8 @@
     <IntDir>obj\x32\Debug\treeview\</IntDir>
     <TargetName>treeviewd</TargetName>
     <TargetExt>.exe</TargetExt>
+    <IncludePath>$(WXWIDGETS_HOME)\INCLUDE;$(IncludePath)</IncludePath>
+    <LibraryPath>$(WXWIDGETS_HOME)\LIB\X86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
@@ -194,6 +196,8 @@
     <IntDir>obj\x32\Release\treeview\</IntDir>
     <TargetName>treeview</TargetName>
     <TargetExt>.exe</TargetExt>
+    <IncludePath>$(WXWIDGETS_HOME)\INCLUDE;$(IncludePath)</IncludePath>
+    <LibraryPath>$(WXWIDGETS_HOME)\LIB\X86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -275,6 +279,7 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(wxRootDir)\lib\$(wxCompilerPrefix)$(wxArchSuffix)_lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>wxbase31ud.lib;wxbase31ud_net.lib;wxbase31ud_xml.lib;wxexpatd.lib;wxjpegd.lib;wxmsw31ud_adv.lib;wxmsw31ud_aui.lib;wxmsw31ud_core.lib;wxmsw31ud_gl.lib;wxmsw31ud_html.lib;wxmsw31ud_media.lib;wxmsw31ud_propgrid.lib;wxmsw31ud_qa.lib;wxmsw31ud_ribbon.lib;wxmsw31ud_richtext.lib;wxmsw31ud_stc.lib;wxmsw31ud_webview.lib;wxmsw31ud_xrc.lib;wxpngd.lib;wxregexud.lib;wxscintillad.lib;wxtiffd.lib;wxzlibd.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
